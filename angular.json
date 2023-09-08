@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "babylon-ng": {
+        "untitled-pos": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/babylon-ng",
+                        "outputPath": "dist/untitled-pos",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": [
@@ -75,14 +75,14 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "babylon-ng:build"
+                        "browserTarget": "untitled-pos:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "babylon-ng:build:production"
+                            "browserTarget": "untitled-pos:build:production"
                         },
                         "development": {
-                            "browserTarget": "babylon-ng:build:development"
+                            "browserTarget": "untitled-pos:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -90,7 +90,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "babylon-ng:build"
+                        "browserTarget": "untitled-pos:build"
                     }
                 },
                 "test": {
@@ -130,7 +130,6 @@
             }
         }
     },
-    "defaultProject": "babylon-ng",
     "cli": {
       "analytics": false
     }

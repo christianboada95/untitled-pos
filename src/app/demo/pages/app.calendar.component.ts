@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {EventService} from '../service/eventservice';
-import {BreadcrumbService} from '../../@shared/services/app.breadcrumb.service';
+import {BreadcrumbService} from '@shared/services/app.breadcrumb.service';
 // @fullcalendar plugins
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';

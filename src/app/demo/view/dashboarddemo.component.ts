@@ -3,7 +3,7 @@ import {EventService} from '../service/eventservice';
 import {MenuItem} from 'primeng/api';
 import {Product} from '../domain/product';
 import {ProductService} from '../service/productservice';
-import {BreadcrumbService} from '../../@shared/services/app.breadcrumb.service';
+import {BreadcrumbService} from '@shared/services/app.breadcrumb.service';
 
 // @fullcalendar plugins
 import dayGridPlugin from '@fullcalendar/daygrid';

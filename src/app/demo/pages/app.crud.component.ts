@@ -3,12 +3,12 @@ import { Product } from '../domain/product';
 import { ProductService } from '../service/productservice';
 import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
-import {BreadcrumbService} from '../../@shared/services/app.breadcrumb.service';
+import {BreadcrumbService} from '@shared/services/app.breadcrumb.service';
 import { Table } from 'primeng/table';
 
 @Component({
     templateUrl: './app.crud.component.html',
-    styleUrls: ['../../assets/demo/badges.scss'],
+    styleUrls: ['../../../assets/demo/badges.scss'],
     providers: [MessageService, ConfirmationService]
 })
 export class AppCrudComponent implements OnInit {
