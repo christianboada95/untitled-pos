@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 
@@ -11,10 +11,7 @@ import { AuthService } from '@core/services/auth.service';
   styleUrls: ['./login-form.component.scss']
 })
 export class LoginFormComponent {
-  loginForm = this.fb.group({
-    username: [null, Validators.required],
-    password: [null, Validators.required],
-  });
+  loginForm: FormGroup<{ username: FormControl<null>; password: FormControl<null>; }>;
 
   hasUnitNumber = false;
 
@@ -22,7 +19,14 @@ export class LoginFormComponent {
     private router: Router,
     private fb: FormBuilder,
     private authService: AuthService
-  ) {}
+  ) { this.createForm() }
+
+  private createForm() {
+    this.loginForm = this.fb.group({
+      username: [null, Validators.required],
+      password: [null, Validators.required],
+    });
+  }
 
   onSubmit(data) {
     alert('submit');

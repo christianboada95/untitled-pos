@@ -29,7 +29,7 @@ export class AuthService {
   }
 
   login(identifier: string, password: string): Observable<Token> {
-    return this.http.post<Token>(`${environment.apiUrl}/auth/local`, { identifier, password })
+    return this.http.post<Token>(`${environment.apiUrl}/auth/login`, { identifier, password })
       .pipe(map(token => {
         // Guarda el token en el navegador
         localStorage.setItem('token', JSON.stringify(token));

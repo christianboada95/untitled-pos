@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
@@ -33,11 +31,8 @@ import { AppCalendarComponent } from './pages/app.calendar.component';
 import { AppTimelineDemoComponent } from './pages/app.timelinedemo.component';
 import { AppInvoiceComponent } from './pages/app.invoice.component';
 import { AppHelpComponent } from './pages/app.help.component';
-import { AppNotfoundComponent } from './pages/app.notfound.component';
-import { AppErrorComponent } from './pages/app.error.component';
-import { AppAccessdeniedComponent } from './pages/app.accessdenied.component';
+import { AppAccessdeniedComponent } from '../pages/app.accessdenied.component';
 import { AppLoginComponent } from './pages/app.login.component';
-import { AppWizardComponent } from './pages/app.wizard.component';
 import { BlockViewer } from './components/blockviewer/blockviewer.component';
 import { BlocksComponent } from './components/blocks/blocks.component';
 
@@ -89,10 +84,7 @@ import { DemoRoutingModule } from './demo-routing.module';
     AppLoginComponent,
     AppInvoiceComponent,
     AppHelpComponent,
-    AppNotfoundComponent,
-    AppErrorComponent,
     AppAccessdeniedComponent,
-    AppWizardComponent,
     BlockViewer,
     BlocksComponent,
   ],

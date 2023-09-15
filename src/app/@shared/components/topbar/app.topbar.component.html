@@ -36,6 +36,12 @@
                 </li>
                 <li role="menuitem">
                     <a href="#" (click)="appMain.onTopbarSubItemClick($event)">
+                        <i class="pi pi-sign-out"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+                <!-- <li role="menuitem">
+                    <a href="#" (click)="appMain.onTopbarSubItemClick($event)">
                         <i class="pi pi-envelope"></i>
                         <span>Message</span>
                     </a>
@@ -45,10 +51,10 @@
                         <i class="pi pi-bell"></i>
                         <span>Notifications</span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </li>
-        <li #notifications [ngClass]="{'active-topmenuitem':appMain.activeTopbarItem === notifications}">
+        <!-- <li #notifications [ngClass]="{'active-topmenuitem':appMain.activeTopbarItem === notifications}">
             <a href="#" (click)="appMain.onTopbarItemClick($event,notifications)">
                 <i class="topbar-icon pi pi-calendar"></i>
                 <span class="topbar-item-name">Notifications</span>
@@ -153,6 +159,6 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> -->
     </ul>
 </div>
